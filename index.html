@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> Home </title>
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+ 
+    <form  method="get">
+
+        <div class="login" id="form1">
+            <h1 > Welcome To Our RGB Color Game </h1>
+            <input type="text"  placeholder="Enter Your First Name and Last Name " required name="uname" ><br><br>
+            <span style="display: none;  color: red; " id="msg1"> Please enter valid name</span>
+            <input type="email"  placeholder="Enter Your Mail"  name="umail"><br><br>
+            <span style="display: none;color: red;" id="msg2">Please enter valid email</span>
+            <input type="submit" value="lets start" id="submit"/>
+            </button>
+        </div>
+     </form>
+
+
+
+     <script>
+             var validEmail = /^[a-zA-Z]{3,16}(@)(yahoo|gmail|outlook)(.com)$/
+             var validUser = /^[a-zA-Z]{3,15}[0-9]{0,}\s*[a-zA-Z]{3,15}$/
+
+             var inps=document.getElementsByTagName("input") 
+             document.forms[0].addEventListener("submit", function(e){ 
+                 e.preventDefault();
+                if(validUser.test(inps[0].value))
+                {
+                    if(validEmail.test(inps[1].value))
+                    {
+                        localStorage.setItem("Uname",inps[0].value)
+                        localStorage.setItem("email",inps[1].value)   
+                        location.href="game.html"   
+                        this.submit               
+                    }
+                
+                else{
+                    
+                    document.getElementById("msg2").style.display="block";
+                    }  
+                }
+                else{
+                    document.getElementById("msg1").style.display="block";
+                }
+
+             });
+
+             </script>
+
+
+</body>
+</html>

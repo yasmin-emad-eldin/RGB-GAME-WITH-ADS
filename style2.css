@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-image: url('logo-design-t.jpg');
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: rgb(150, 118, 76);
+font-style: italic;
+font-weight: bold;
+opacity: 0.9;
+background-repeat: no-repeat;
+height: 400px;
+background-size: cover;
+background-position:top;  
+}
+
+.login
+{   
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 150px;
+    margin-top: 100px;
+    padding: 30px;
+    width: 500px;
+}
+
+
+#form1{
+    text-align: center;
+}
+
+
+input[type=text], input[type=password],  input[type=Uname],input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(240, 239, 239);
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+
+#submit {
+    background-color: burlywood;
+    width: auto;  
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+a.registration{
+  color: white;
+  padding: 14px 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+select{
+    border-radius: 16px;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.gender{
+    margin: 25px;
+}
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: hsl(0, 0%, 95%, 0.2);
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(150, 118, 76);
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: rgb(150, 118, 76);
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
